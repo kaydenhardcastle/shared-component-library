@@ -1,4 +1,5 @@
 import './App.css';
+import Text from './components/Text';
 
 function App() {
 	return (
@@ -24,6 +25,8 @@ function App() {
 				<span class='light-blue'> {`}`}</span>
 				<span class='grey'> /&gt;</span>
 			</div>
+			<p>Output:</p>
+			<Text color='#9e9e9e' size='20px' text='This is a test2.' />
 		</div>
 	);
 }
