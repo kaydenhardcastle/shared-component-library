@@ -3,19 +3,16 @@ html {
 }
 
 .App {
+	min-width: 500px;
+	min-height: 500px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 500px;
-	min-height: 500px;
 	border: solid 2px #333;
 	margin: auto;
 	padding: 20px 0;
-}
-
-h1,
-p {
-	margin: 20px auto;
+	color: #333;
+	border-radius: 5px;
 }
 
 h1 {
@@ -31,6 +28,52 @@ b {
 	font-size: 30px;
 }
 
+button {
+	width: 150px;
+	height: 40px;
+	background-color: none;
+	letter-spacing: 0.5px;
+	border: none;
+	border-radius: 3px;
+	margin: auto;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.primary-button {
+	color: #333;
+	font-weight: bold;
+	background-color: #fff;
+	border: solid 2px #333;
+}
+
+.primary-button:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.secondary-button {
+	color: #fff;
+	font-weight: bold;
+	background-color: #333;
+	border: solid 2px #333;
+}
+
+.secondary-button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.small-button {
+	width: 100px;
+}
+
+.large-button {
+	width: 300px;
+}
+
 .gap {
 	width: 100%;
 	height: 50px;
@@ -43,6 +86,35 @@ b {
 	font-weight: bold;
 	font-family: 'consolas';
 	font-size: 16px;
+}
+
+.code-space {
+	margin-left: 15px;
+}
+
+p,
+b,
+.text,
+.code {
+	margin: auto;
+}
+
+.row {
+	height: 200px;
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #9e9e9e;
+}
+
+.column {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .grey {
