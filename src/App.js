@@ -1,6 +1,7 @@
 import './App.css';
 import Text from './components/Text';
 import Button from './components/Button';
+import Input from './components/Input';
 
 function App() {
 	return (
@@ -58,6 +59,28 @@ function App() {
 						text='Test'
 						action={console.log('yo')}
 					/>
+				</div>
+			</div>
+			<div className='gap'></div>
+			<div className='row'>
+				<div className='column'>
+					<b>Input Component</b> <p>Output:</p>
+				</div>
+				<div className='column'>
+					<div className='code'>
+						<span className='grey'>&lt;</span>
+						<span className='green'>Input </span>
+						<span className='light-blue'>type={`{`}</span>
+						<span className='light-blue'> {`}`} </span>
+						<span className='light-blue'>size={`{`}</span>
+						<span className='light-blue'> {`}`} </span>
+						<span className='light-blue'>label={`{`}</span>
+						<span className='light-blue'> {`}`} </span>
+						<span className='light-blue'>onChange={`{`}</span>
+						<span className='light-blue'> {`}`}</span>
+						<span className='grey'> /&gt;</span>
+					</div>
+					<Input onChange={console.log('yo')} />
 				</div>
 			</div>
 		</div>
